@@ -18,10 +18,9 @@ public class Phone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String type;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private PhoneType phones;
+    private PhoneType type;
 
     @Column(nullable = false)
     private String number;
